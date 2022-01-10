@@ -20,14 +20,16 @@ function StockDetail(props) {
           <th>Open</th>
         </tr>
       </thead>
-      <tr className="sctock-ul">
-        <td>{stockData.name}</td>
-        <td>{stockData.lastPrice}</td>
-        <td>{stockData.change}</td>
-        <td>{stockData.high}</td>
-        <td>{stockData.low}</td>
-        <td>{stockData.open}</td>
-      </tr>
+      <tbody>
+        <tr className="sctock-ul">
+          <td>{stockData.name}</td>
+          <td>{stockData.lastPrice}</td>
+          <td>{stockData.change}</td>
+          <td>{stockData.high}</td>
+          <td>{stockData.low}</td>
+          <td>{stockData.open}</td>
+        </tr>
+      </tbody>
     </table>
   );
 }

@@ -4,9 +4,9 @@ function Stocks() {
   return (
     <main>
       <ul>
-        {data.map(({ name, symbol }) => {
+        {data.map(({ name, symbol }, index) => {
           return (
-            <li>
+            <li key={index}>
               <a href={`/stocks/${symbol}`}>
                 {name} ({symbol})
               </a>
